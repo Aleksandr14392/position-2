@@ -1,0 +1,38 @@
+div {
+    background-color: gray;
+    height: 500px;
+    width: 40px;
+    transition: width 1s;
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+div:hover {
+    width: 300px;
+    display: flex;
+    justify-content: left;
+}
+
+div:hover content {
+    opacity: 0;
+}
+
+div:hover ul {
+    opacity: 1;
+    writing-mode: horizontal-tb;
+    text-align: left;
+    font-size: 25px;
+    position: absolute;
+}
+
+ul {
+    opacity: 0;
+    list-style-type: none;
+}
+
+li:hover {
+    color: orange;
+    cursor: pointer;
+}
